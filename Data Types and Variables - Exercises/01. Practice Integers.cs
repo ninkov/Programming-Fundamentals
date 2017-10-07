@@ -29,6 +29,9 @@ namespace PracticeIntegerNumbers
             -1141583228
             -1223372036854775808
             */
+            
+           // some things for truble 
+                
         }
     }
 }
