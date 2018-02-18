@@ -16,7 +16,7 @@ namespace Test
                 primes[i] = true;
             }
 
-            for (int i = 2; i < Math.Sqrt(number); i++)
+            for (int i = 2; i <= Math.Sqrt(number); i++)
             {
                 if (primes[i])
                 {
