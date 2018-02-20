@@ -9,16 +9,16 @@ namespace Test
         {
             int number = int.Parse(Console.ReadLine());
 
-            bool[] primes = new bool[number + 1];
+            bool[] primes = new bool[number+1];
 
-            for (int i = 2; i < primes.Length; i++)
-            {
+            for (int i = 2; i < primes.Length; i++)//indexed by integers 2 to n
+            {                                      //initially all set to true.
                 primes[i] = true;
             }
 
             for (int i = 2; i <= Math.Sqrt(number); i++)
             {
-                if (primes[i])
+                if (primes[i])// if A[i] is true:
                 {
                     for (int j = i * i; j <= number; j += i)
                     {
@@ -33,7 +33,7 @@ namespace Test
             {
                 if (primes[i])
                 {
-                    result.Add(i);
+                    result.Add(i);//Output: all i such that A[i] is true.
                 }
             }
             Console.WriteLine(String.Join(" ",result));
