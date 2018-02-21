@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace PairsByDifference
 {
-    class PairsByDifference
+   public class PairsByDifference
     {
-        static void Main()
+        public static void Main()
         {
 		int[] numbers = Console.ReadLine()
 			.Split
