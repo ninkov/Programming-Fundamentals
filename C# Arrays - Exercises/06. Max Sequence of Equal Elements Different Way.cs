@@ -11,7 +11,7 @@ namespace MaxSequenceOfEqualElements
 
             int bestSequence = 1;
             int currentSequence = 1;
-            int bestNum = 0;
+            int bestNum = 1;
 
             for (int i = 0; i < numbers.Length-1; i++)
             {
